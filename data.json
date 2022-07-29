@@ -1,0 +1,237 @@
+{
+
+  "format": "unitedrobots4",
+
+  "customer": {
+
+    "name": "Prensa Sports"
+
+  },
+
+  "receiver": {
+
+    "name": "Main Receiver"
+
+  },
+
+  "article": {
+
+    "id": "event_finished_3960974",
+
+    "createdAt": "2022-07-08T02:39:48.958Z",
+
+    "generatedAt": "2022-07-08T02:39:48.958Z",
+
+    "type": "event_finished",
+
+    "priority": 1,
+
+    "status": "new",
+
+    "text": {
+
+      "meta": {},
+
+      "title": "Atletico GO supera a Olimpia en la Copa Sudamericana Åttondelsfinal",
+
+      "bodyParts": [
+
+        "Después del segundo partido de la Copa Sudamericana Åttondelsfinal, de local a favor del Olimpia, Atletico GO se garantiza el triunfo por la puntuación final. El partido terminó 7-3, lo que hiz
+
+o que todo cuadrara en el resultado final después de dos partidos, y queda a la par cuando juega de visitante goles. Atletico GO ganó la contienda por penales."
+
+      ]
+
+    }
+
+  },
+
+  "referenceId": 500092451,
+
+  "isAboutFocus": false,
+
+  "description": {
+
+    "id": 3960974,
+
+    "away": {
+
+      "id": 190518,
+
+      "name": "Olimpia",
+
+      "logo": "https://cdn.api.everysport.com/logos/fotboll/olimpia_190518/1641998342298.png",
+
+      "score": "3"
+
+    },
+
+    "home": {
+
+      "id": 158404,
+
+      "name": "Atletico Club Goianense",
+
+      "logo": "https://cdn.api.everysport.com/logos/fotboll/atletico_club_goianense_158404/1654764046179.png",
+
+      "score": "7"
+
+    },
+
+    "arena": {},
+
+    "level": {
+
+      "id": 32838,
+
+      "name": "Copa Sudamericana"
+
+    },
+
+    "round": 1,
+
+    "sport": {
+
+      "id": 10,
+
+      "name": "Fotboll"
+
+    },
+
+    "league": {
+
+      "id": 124412,
+
+      "name": "Copa Sudamericana Åttondelsfinal",
+
+      "endDate": "2022-07-08T00:00+0200",
+
+      "startDate": "2022-06-29T00:00+0200",
+
+      "immutableId": 3201
+
+    },
+
+    "focusTeam": "general",
+
+    "matchDate": "2022-07-08T02:30+0200",
+
+    "teamClass": {
+
+      "id": 1,
+
+      "name": "herrar"
+
+    },
+
+    "complete": true,
+
+    "periodScores": [
+
+      {
+
+        "home": 2,
+
+        "away": 0
+
+      },
+
+      {
+
+        "home": 5,
+
+        "away": 3
+
+      }
+
+    ],
+
+    "statistics": {
+
+      "home": {
+
+        "fouls": 10,
+
+        "offsides": 1,
+
+        "throwIns": 18,
+
+        "freeKicks": 14,
+
+        "goalKicks": 6,
+
+        "cornerKicks": 4,
+
+        "shotsOnGoal": 10,
+
+        "shotsOffGoal": 3,
+
+        "ballPossession": 59,
+
+        "goalkeeperSaves": 2
+
+      },
+
+      "away": {
+
+      +  "fouls": 11,  // falta 
+
+        "offsides": 3,  // fuera de juego
+
+        "throwIns": 22, // lanzamientos
+
+        "freeKicks": 11, // tiros libres
+
+        "goalKicks": 10, // saques de portería
+
+      +  "cornerKicks": 5, // saques de esquina
+
+       + "shotsOnGoal": 2, // tiros al arco
+
+       + "shotsOffGoal": 3, // tiros fuera del arco
+
+       + "ballPossession": 41, // posesión de balon
+
+        "goalkeeperSaves": 8 // salvadas
+      }
+
+    },
+
+    "image_meta": {
+
+      "errorMessage": "No image"
+
+    }
+
+  },
+
+  "sent": {
+
+    "first": "2022-07-08T02:39:50.861Z",
+
+    "latest": "2022-07-08T02:39:50.861Z"
+
+  }
+
+}
+
+"ballPossession": 41, // posesión de balon
+"shotsOffGoal": 3, // tiros fuera del arco
+"shotsOnGoal": 2, // tiros al arco
+"fouls": 11,  // faltas 
+"cornerKicks": 5, // saques de esquina
+
+
+"offsides": 3,  // fuera de juego
+
+"throwIns": 22, // lanzamientos
+
+"freeKicks": 11, // tiros libres
+
+"goalKicks": 10, // saques de portería
+
+
+
+
+
+"goalkeeperSaves": 8 // salvadas
