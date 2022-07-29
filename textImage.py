@@ -22,7 +22,7 @@ import numpy as np
 # ESCRIBE Y HACE WRAP DE LOS NOMBRES DE LOS EQUPOS DADO UN TEXTO Y COORDENADAS
 def writeTeam (text,sizex,sizey):
 
-    text_img = np.ones((40, 200))
+
     font = cv2.FONT_HERSHEY_SIMPLEX
 
     wrapped_text = textwrap.wrap(text, width=15)
@@ -70,7 +70,7 @@ def calcularCentro(cadena, pos):
 ################# EQUIPO IZQUIERDA ################# 
 logoIzq = 'https://cdn.api.everysport.com/logos/fotboll/olimpia_190518/1641998342298.png'
 
-nameTeamIzq = ("equipo de nombre largo").upper()
+nameTeamIzq = ("equipo pc. de nombre largo").upper()
 
 gols_one = "4"
 
@@ -88,7 +88,7 @@ equipoIzq = [
 ################# EQUIPO DERECHA ################# 
 logoDer = 'https://cdn.api.everysport.com/logos/fotboll/atletico_club_goianense_158404/1654764046179.png'
 
-nameTeamDer = ("Atletico Club Goianense").upper()
+nameTeamDer = ("nombre corto").upper()
 
 gols_two = "2"
 
@@ -154,13 +154,13 @@ img1_copy = img1.copy()
 # MASCARA PARA TRASPARENCIA DE LOGOS
 
 # LOGO CENTRAL
-img1_copy.paste(logo3, (468,10), logo3)
+img1_copy.paste(logo3, (460,10), logo3)
 
 # LOGO IZQUIERDO ( PSG PRUEBA )
-img1_copy.paste(logo1, (145,50), logo1)
+img1_copy.paste(logo1, (145,20), logo1)
 
 #LOGO DERECHO ( BACELONA )
-img1_copy.paste(logo2, (727,50), logo2)
+img1_copy.paste(logo2, (727,20), logo2)
 
 
 # GUARDAR IMAGEN TEMPORAL CON LOGOS
@@ -172,19 +172,19 @@ img = cv2.imread('assets/img_logos.jpg')
 
 
 # ESCRIBE GOLES EQUIPO IZQUERDA
-cv2.putText(img, gols_one, (calcularCentro(gols_one, 420),258), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,0), 2, cv2.LINE_AA, False)
+cv2.putText(img, gols_one, (calcularCentro(gols_one, 435),195), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,0), 2, cv2.LINE_AA, False)
 
 # ESCRIBE GOLES EQUIPO DERECHA
-cv2.putText(img, gols_two,(calcularCentro(gols_two, 560),258), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,0), 2, cv2.LINE_AA, False) 
+cv2.putText(img, gols_two,(calcularCentro(gols_two, 545),195), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,0), 2, cv2.LINE_AA, False) 
 
 
 # LLAMADO DE FUNCIONEN QUE ESCRIBE NOMBRE DE LOS EQUIPOS
-writeTeam(nameTeamIzq,440,435)
-writeTeam(nameTeamDer,440,1550)
+writeTeam(nameTeamIzq,380,435)
+writeTeam(nameTeamDer,380,1550)
 
 # LLAMADO DE FUNCIONEN QUE ESCRIBE DATOS EN TABLE 
-writeDataTable(equipoIzq, (215,365))
-writeDataTable(equipoDer, (770,365))
+writeDataTable(equipoIzq, (215,326))
+writeDataTable(equipoDer, (770,326))
 
 
 
