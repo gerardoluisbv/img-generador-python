@@ -30,13 +30,23 @@ def writeTeam (text,sizex,sizey):
     font_size = 1
     font_thickness = 2
 
+
     for i, line in enumerate(wrapped_text):
+        if len(text) > 40:
+            font_size = 0.5
+            font_thickness = 1
+
         textsize = cv2.getTextSize(line, font, font_size, font_thickness)[0]
 
-        gap = textsize[1] + 16
+        if len(text) > 40:
+             gap = textsize[1] + 8
+        else:    
+            gap = textsize[1] + 16
 
         y = int((sizex + textsize[1]) / 2) + i * gap
         x = int((sizey - textsize[0]) / 2)
+
+       
 
         cv2.putText(img, line, (x, y), font,
                     font_size, 
@@ -70,7 +80,7 @@ def calcularCentro(cadena, pos):
 ################# EQUIPO IZQUIERDA ################# 
 logoIzq = 'https://cdn.api.everysport.com/logos/fotboll/olimpia_190518/1641998342298.png'
 
-nameTeamIzq = ("equipo pc. de nombre largo").upper()
+nameTeamIzq = ("nvf cf agdg").upper()
 
 gols_one = "4"
 
@@ -88,7 +98,7 @@ equipoIzq = [
 ################# EQUIPO DERECHA ################# 
 logoDer = 'https://cdn.api.everysport.com/logos/fotboll/atletico_club_goianense_158404/1654764046179.png'
 
-nameTeamDer = ("nombre corto").upper()
+nameTeamDer = ("Barcelona fc").upper()
 
 gols_two = "2"
 
